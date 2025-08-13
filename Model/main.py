@@ -1,7 +1,7 @@
 import os
 import random
 from contextlib import asynccontextmanager
-
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from pydantic import BaseModel
 from ChatBot import ChatBot  # Assuming your ChatBot class is in ChatBot.py
@@ -9,6 +9,7 @@ from ChatBot import ChatBot  # Assuming your ChatBot class is in ChatBot.py
 # A dictionary to hold our chatbot instance
 # We will initialize this once when the application starts
 chatbot_instance = {}
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -49,6 +50,13 @@ app = FastAPI(lifespan=lifespan)
 class UserInput(BaseModel):
     user_message: str
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Change "*" to your frontend URL for production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.post("/get_response")
 def get_response(user_input: UserInput):
     """

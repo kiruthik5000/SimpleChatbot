@@ -3,18 +3,23 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "How are you",
-        "Is anyone there?",
+        "Hi there",
         "Hello",
-        "Hey there",
-        "Good day"
+        "Hey",
+        "Good day",
+        "What's up?",
+        "How are you doing?",
+        "Is anyone there?",
+        "Hope you're having a good day",
+        "Howdy",
+        "Hey there"
       ],
       "responses": [
-        "Hello! Thanks for visiting.",
-        "Good to see you again.",
-        "Hi there, how can I help you today?",
-        "Hello! How can I assist you today?"
+        "Hello! Thanks for visiting. How can I assist you?",
+        "Good to see you again! What can I help you with?",
+        "Hi there, I'm a chatbot designed to help with restaurant bookings. What can I do for you today?",
+        "Hello! How can I assist you with your reservation?",
+        "Hey! I'm here to help you find and book a great meal."
       ]
     },
     {
@@ -24,88 +29,183 @@
         "See you later",
         "Goodbye",
         "Later",
-        "Thanks for your help"
+        "Talk to you soon",
+        "I'm leaving",
+        "Thanks for your help, bye",
+        "I'm done here"
       ],
       "responses": [
-        "See you later! Thanks for visiting.",
-        "Have a nice day!",
-        "Bye! Come back again soon.",
-        "Glad I could help! Feel free to ask if you have more questions."
+        "See you later! Feel free to come back if you have more questions.",
+        "Have a wonderful day!",
+        "Bye! Come back again soon to book your next meal.",
+        "Glad I could help! Goodbye for now."
       ]
     },
     {
       "tag": "thanks",
       "patterns": [
         "Thank you",
-        "Nice job",
-        "I appreciate that",
-        "Nice response",
         "Thanks",
-        "Super"
+        "That's great, thank you",
+        "I appreciate that",
+        "Nice job",
+        "Great, thanks!",
+        "Thanks a bunch",
+        "Appreciate your help"
       ],
       "responses": [
-        "You're welcome! Happy to help.",
-        "No problem! If you have more doubts, feel free to ask.",
-        "My pleasure. Thank you for your time!"
+        "You're very welcome! Is there anything else I can help you with?",
+        "No problem! I'm here if you have more questions.",
+        "My pleasure. Thank you for your time!",
+        "Anytime! I'm glad I could assist."
       ]
     },
     {
       "tag": "payments",
       "patterns": [
-        "How to pay",
+        "How can I pay?",
+        "What payment methods do you accept?",
         "Payment options",
-        "Payment failed",
-        "Cannot pay",
-        "Online payment",
-        "Bill"
+        "Can I pay with a credit card?",
+        "Do you take online payments?",
+        "My payment failed",
+        "Payment failed, what should I do?",
+        "Is cash an option?",
+        "I can't complete the payment",
+        "What if my payment doesn't go through?"
       ],
       "responses": [
-        "You can pay online via UPI, net banking, or directly at the restaurant.",
-        "We accept both online (UPI, cards) and offline (cash) payments.",
-        "Yes, payment can be made either online or in person at the restaurant."
+        "You can pay online using UPI, net banking, or major credit/debit cards. You can also pay in person at the restaurant.",
+        "We accept both online (UPI, cards) and offline (cash) payments. Please select your preferred method during checkout.",
+        "If your payment failed, please try again or use an alternative payment method. If the problem persists, please contact our support team.",
+        "Yes, you can pay with cash directly at the restaurant. For online payments, we support UPI, net banking, and cards."
       ]
     },
     {
       "tag": "book",
       "patterns": [
-        "How to book a restaurant",
-        "Book a table",
+        "How do I book a table?",
+        "I want to make a reservation",
+        "Book a table for tonight",
         "Reserve a seat",
-        "Restaurant booking steps",
-        "To eat in restaurant"
+        "What are the steps to book a restaurant?",
+        "Can I get a table for two?",
+        "I'd like to book a dinner",
+        "How to eat in a restaurant"
       ],
       "responses": [
-        "You can book a restaurant by going to the 'Restaurant' tab at the top left of the website.",
-        "Choose your preferred cuisine, select a restaurant, click 'Book', fill in your details, and complete the payment.",
-        "Steps to book a restaurant:\n1. Go to the top left and search for a restaurant or food\n2. Select your preferred restaurant\n3. Click on the 'Book' button\n4. Fill in your details and proceed with payment"
+        "To book a restaurant, go to the 'Restaurant' tab, search for a place, choose your time and date, and complete the booking form.",
+        "Choose your preferred cuisine, select a restaurant, click 'Book', fill in your details like date and time, and confirm your reservation.",
+        "The steps to book are simple: 1. Find a restaurant. 2. Select a time and date. 3. Fill in your details. 4. Complete the booking."
       ]
     },
     {
       "tag": "cancel",
       "patterns": [
-        "How to cancel the booking",
+        "How do I cancel my booking?",
         "Cancel restaurant booking",
-        "Cancel my reservation",
+        "I need to cancel my reservation",
         "Withdraw my booking",
-        "Refund for cancellation",
-        "Cancelled booking money"
+        "What's your cancellation policy?",
+        "Can I get a refund for a cancelled booking?",
+        "How long does a refund take?"
       ],
       "responses": [
-        "You can cancel your booking from the 'Bookings' tab. Refunds are processed within 3 business days.",
-        "Go to the 'Bookings' tab, select the booking you want to cancel, and your refund will be initiated within 3 days.",
-        "Bookings canceled at least 5 hours before the reservation time are eligible for a full refund within 3 business days."
+        "You can cancel your booking from the 'Bookings' tab. Refunds are typically processed within 3-5 business days.",
+        "Go to the 'Bookings' tab, select the reservation you want to cancel, and follow the steps. For a full refund, you must cancel at least 5 hours before your reservation time.",
+        "Our refund policy is as follows: cancellations made more than 5 hours in advance get a full refund. Less than 5 hours will result in a partial refund."
       ]
     },
     {
       "tag": "delivery",
       "patterns": [
-        "Is there any home delivery option?",
+        "Do you offer home delivery?",
+        "Is there a delivery option?",
+        "Can I get food delivered?",
         "Home delivery",
-        "Can I order food to home?",
-        "Delivery available?"
+        "Delivery available?",
+        "Do you deliver food?",
+        "Can I order food to my house?"
       ],
       "responses": [
-        "As a restaurant booking app, we do not offer home delivery. Please try platforms like Swiggy or Zomato for food delivery."
+        "As a restaurant booking platform, we don't handle food delivery directly. We focus on in-person reservations. For delivery, please use platforms like Swiggy or Zomato."
+      ]
+    },
+    {
+      "tag": "restaurant_location",
+      "patterns": [
+        "Where is the restaurant located?",
+        "What's the address of [Restaurant Name]?",
+        "Directions to the restaurant",
+        "Can you show me the location on a map?",
+        "Where is [Restaurant Name]?",
+        "How do I get to [Restaurant Name]?"
+      ],
+      "responses": [
+        "You can find the restaurant's address on its profile page. We also provide a map for easy navigation.",
+        "The full address and directions are available on the restaurant's details page after you select it.",
+        "Please select a restaurant, and its location details will be displayed."
+      ]
+    },
+    {
+      "tag": "restaurant_hours",
+      "patterns": [
+        "What are the opening hours?",
+        "When does the restaurant open?",
+        "Is the restaurant open on weekends?",
+        "What time do you close?",
+        "When is [Restaurant Name] open?",
+        "Are you open for lunch?"
+      ],
+      "responses": [
+        "The opening hours are listed on each restaurant's profile page. They vary by location and day of the week.",
+        "You can view the operating hours by clicking on the restaurant's name and looking at its details.",
+        "Please check the specific restaurant's page for its most up-to-date operating hours."
+      ]
+    },
+    {
+      "tag": "menu",
+      "patterns": [
+        "Can I see the menu?",
+        "What kind of food do you serve?",
+        "Do you have vegetarian options?",
+        "What's on the menu?",
+        "Menu please",
+        "What are the specials today?",
+        "Are there vegan options?",
+        "Is the menu available online?"
+      ],
+      "responses": [
+        "Yes, the menu for each restaurant is available on its details page. You can browse it before you book.",
+        "Most restaurants have their full menu listed on their profile. You can see it there along with prices.",
+        "You can view the menu by clicking on the restaurant you're interested in. We have a wide range of options, including vegetarian and vegan dishes."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help",
+        "I have a problem with my booking",
+        "Contact support",
+        "I need to talk to a person",
+        "Can you connect me to a human?",
+        "This isn't working",
+        "Something is wrong"
+      ],
+      "responses": [
+        "I'm sorry to hear you're having trouble. Please contact our support team at support@example.com, and they will be happy to assist you.",
+        "For urgent issues, you can call our support hotline at 123-456-7890. I'm just a bot, but they can provide real-time assistance.",
+        "I can help with general questions, but for specific booking issues, please reach out to our customer support."
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I don't understand that. Could you rephrase your question?",
+        "My apologies, I am not trained to handle that request. Please try asking about bookings, payments, or cancellations.",
+        "I'm a simple bot and can't help with that. Maybe try a different question?",
+        "I don't have a response for that. Is there something else I can help you with?"
       ]
     }
   ]
