@@ -6,6 +6,9 @@ services:
     container_name: fastapi_backend
     ports:
       - "8000:8000"
+    volumes:
+      - ./backend:/app
+    restart: always
 
   frontend:
     build: ./UI
@@ -14,3 +17,5 @@ services:
       - "8080:80"
     depends_on:
       - backend
+    restart: always
+
