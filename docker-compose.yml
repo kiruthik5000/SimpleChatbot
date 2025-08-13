@@ -2,13 +2,13 @@ version: "3.8"
 
 services:
   backend:
-    build: ./backend
+    build: ./Model
     container_name: fastapi_backend
     ports:
       - "8000:8000"
 
   frontend:
-    build: ./frontend
+    build: ./UI
     container_name: nginx_frontend
     ports:
       - "8080:80"
